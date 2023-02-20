@@ -1,0 +1,9 @@
+﻿namespace Todoist.Views;
+
+public partial class EntryOutlined : Grid
+{
+	public EntryOutlined()
+	{
+		InitializeComponent();
+	}
+}

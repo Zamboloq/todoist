@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             RowDefinitions="50"
+             x:Name="this"
+             x:Class="Todoist.Views.EntryOutlined">
+    <Frame
+        Grid.Row="0"
+        Padding="8"
+        BorderColor="Gray">
+        <Entry
+            x:Name="txtEntry"
+            Focused="txtEntryOnFocused"
+            Unfocused="txtEntryOnUnfocused"
+            IsPassword="{Binding Source={x:Reference this}, Path=IsPasswordEntry}"
+            Text="{Binding Source={x:Reference this}, Path=Text}"/>
+    </Frame>
+
+    <Label
+        x:Name="labelPlaceHolder"
+        Grid.Row="0"
+        Margin="10, 0, 10, 0"
+        Text="{Binding Source={x:Reference this}, Path=PlaceHolder}"
+        FontSize="14"
+        TextColor="Gray"
+        BackgroundColor="White"
+        HorizontalOptions="StartAndExpand"
+        VerticalOptions="CenterAndExpand"/>
+</Grid>
+

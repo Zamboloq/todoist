@@ -57,3 +57,15 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Todoist.Screens.SignUpPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Screens/SignUpPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Screens/SignUpPage.xaml
+
+[/Users/mohsenshahini/Projects/Todoist/Todoist/Views/EasyNavBar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Todoist.Views.EasyNavBar.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EasyNavBar.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EasyNavBar.xaml
+
+[/Users/mohsenshahini/Projects/Todoist/Todoist/Views/EntryOutlined.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Todoist.Views.EntryOutlined.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EntryOutlined.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EntryOutlined.xaml

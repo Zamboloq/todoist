@@ -1,0 +1,45 @@
+﻿using Todoist.ViewModels;
+
+namespace Todoist;
+
+public partial class SignUpPage : ContentPage
+{
+    private string password = "";
+    Entry entry = new Entry { Placeholder = "Enter text" };
+
+    public SignUpPage()
+	{
+		InitializeComponent();
+        BindingContext = new AuthViewModel();
+    }
+
+	private async void OnSignUpClicked(object sender, EventArgs e)
+	{
+
+        if (password == null || password.Length == 0)
+        {
+            return;
+        }
+
+        try
+        {
+            await Navigation.PushModalAsync(new MainPage());
+        }
+        catch (Exception ex)
+        {
+        }
+
+    }
+
+    private void OnPasswordEntryTextChanged(object sender, TextChangedEventArgs e)
+    {
+        string oldText = e.OldTextValue;
+        string newText = e.NewTextValue;
+        string myText = entry.Text;
+    }
+
+    private void OnPasswordEntryCompleted(object sender, EventArgs e)
+    {
+        password = ((Entry)sender).Text;
+    }
+}

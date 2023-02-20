@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Todoist.ViewModels"
+             x:Class="Todoist.Screens.EmailPage"
+             Title="EmailPage">
+    <ContentPage.BindingContext>
+        <local:AuthViewModel />
+    </ContentPage.BindingContext>
+    <VerticalStackLayout>
+        <Label 
+            Text="What's your email address?"
+            TextColor="Black"
+            Margin="20,10,20,150"
+            FontSize="Large"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="emailEntry"
+               Margin="20,10,20,20"
+               Placeholder="Email"
+               TextChanged="OnEmailTextChanged"
+               Completed="OnEmailCompleted" />
+
+        <Button Text="Continue with email"
+                Margin="20,0,20,20"
+                HorizontalOptions="Fill"
+                BackgroundColor="Red"
+                TextColor="White"
+                Clicked="OnContinueWithEmailClicked" />
+
+    </VerticalStackLayout>
+</ContentPage>
