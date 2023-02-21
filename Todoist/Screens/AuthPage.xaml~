@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Todoist.AuthPage"
+             Shell.NavBarIsVisible="False">
+    <VerticalStackLayout>
+        <Image 
+            Source="todoist.png"
+            Margin="150,10,150,10"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" />
+
+        <Image Source="auth_image.png"
+               Margin="20,10,20,10"/>
+
+
+        <Label 
+            Text="Organize your work and life, finally."
+            TextColor="Black"
+            Margin="20,10,20,50"
+            FontSize="Large"
+            FontAttributes="Bold"
+            HorizontalOptions="Center" />
+
+        <Button Text="Continue with email"
+                Margin="10,10,10,10"
+                HorizontalOptions="Center"
+                BackgroundColor="Red"
+                TextColor="White"
+                FontSize="Body"
+                FontAttributes="Bold"
+                Clicked="OnAuthEmailClicked" />
+
+        <Button Text="Continue with Apple"
+                HorizontalOptions="Center"
+                BackgroundColor="Black"
+                TextColor="White"
+                FontSize="Body"
+                FontAttributes="Bold"
+                Clicked="OnAuthAppleClicked" />
+
+        <Label 
+            Text="Continue with more options."
+            Margin="50,10,50,10"
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="By continuing you agree to Todoist's Terms of Service and Privacy Policy."
+            Margin="50,10,50,10"
+            HorizontalTextAlignment="Center"
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

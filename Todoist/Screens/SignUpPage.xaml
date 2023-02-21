@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Todoist.ViewModels"
+             xmlns:views="clr-namespace:Todoist.Views"
+             x:Class="Todoist.SignUpPage"
+             Shell.NavBarIsVisible="True"
+             Title="Sign Up Page">
+    <ContentPage.BindingContext>
+        <local:AuthViewModel />
+    </ContentPage.BindingContext>
+    <VerticalStackLayout>
+        <Label 
+            Text="Sign Up"
+            TextColor="Black"
+            Margin="20,50,10,10"
+            FontSize="Title"
+            FontAttributes="Bold"
+            HorizontalOptions="Start" />
+        <Label 
+            Text="Using myemail@coherentsolutions.com to sign up"
+            Margin="20,10,20,150"
+            HorizontalOptions="Start" />
+
+        <views:EntryOutlined
+            x:Name="passwordEntry"
+            Margin="20,0,20,20"
+            PlaceHolder="Password"
+            IsPasswordEntry="True" />
+
+        <Button Text="Sign Up"
+                Margin="20,0,20,20"
+                HorizontalOptions="Fill"
+                BackgroundColor="Red"
+                TextColor="White"
+                FontSize="Body"
+                FontAttributes="Bold"
+                Clicked="OnSignUpClicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

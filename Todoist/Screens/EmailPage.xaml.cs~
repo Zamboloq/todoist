@@ -1,0 +1,32 @@
+﻿using Todoist.ViewModels;
+
+namespace Todoist.Screens;
+
+public partial class EmailPage : ContentPage
+{
+
+    Entry entry = new Entry { Placeholder = "Enter text" };
+
+	public EmailPage()
+	{
+        //InitializeComponent();
+        //BindingContext = new AuthViewModel();
+    }
+
+	private void OnContinueWithEmailClicked(object sender, EventArgs e)
+	{
+
+	}
+
+	private void OnEmailTextChanged(object sender, TextChangedEventArgs e)
+	{
+        string oldText = e.OldTextValue;
+        string newText = e.NewTextValue;
+        string myText = entry.Text;
+    }
+
+	private void OnEmailCompleted(object sender, EventArgs e)
+	{
+        string text = ((Entry)sender).Text;
+    }
+}
